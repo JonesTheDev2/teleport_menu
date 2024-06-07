@@ -33,19 +33,19 @@ function OpenMenu()
     
     WarMenu.SetMenuWidth('circle_menu', 0.3)
 
-    WarMenu.CreateSubMenu('1v1', 'circle_menu', '1v1')
-    WarMenu.CreateSubMenu('2v2', 'circle_menu', '2v2')
-    WarMenu.CreateSubMenu('All', 'circle_menu', 'All')
+    WarMenu.CreateSubMenu('option1', 'circle_menu', 'option1') -- set option1 to whatever you want
+    WarMenu.CreateSubMenu('option2', 'circle_menu', 'option2') -- set option2 to whatever you want
+    WarMenu.CreateSubMenu('option3', 'circle_menu', 'option3') -- set option3 to whatever you want
 
     WarMenu.OpenMenu('circle_menu')
 
     while WarMenu.IsMenuOpened('circle_menu') do
         Citizen.Wait(0)
-        if WarMenu.MenuButton('1v1', 'circle_menu') then
+        if WarMenu.MenuButton('option1', 'circle_menu') then -- set option1 to what you put above
             TriggerServerEvent('routingbucket:SetRoutingBucket1')
-        elseif WarMenu.MenuButton('2v2', 'circle_menu') then
+        elseif WarMenu.MenuButton('option2', 'circle_menu') then -- set option2 to what you put above
             TriggerServerEvent('routingbucket:SetRoutingBucket2')
-	        elseif WarMenu.MenuButton('All', 'circle_menu') then
+	        elseif WarMenu.MenuButton('option3', 'circle_menu') then -- set option3 to what you put above
             TriggerServerEvent('routingbucket:SetRoutingBucket3')
         end
         WarMenu.Display()
