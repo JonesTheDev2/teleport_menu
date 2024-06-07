@@ -13,10 +13,10 @@ AddEventHandler('routingbucket:SetRoutingBucket4', function()
     local playerId = source
     SetPlayerRoutingBucket(playerId, 4)
 end)" under option 3 in server.lua
-
-
-
-
-
-
+.
+.
+.
+.
+.
+.
 DM me on discord if you have any questions or need help: notbob_49208
