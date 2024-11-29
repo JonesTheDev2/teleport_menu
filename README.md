@@ -20,4 +20,4 @@ end)" under option 3 in server.lua
 
 
 
-DM me on discord if you have any questions or need help: notbob_49208
+DM me on discord if you have any questions or need help: notbob_49208_srp
